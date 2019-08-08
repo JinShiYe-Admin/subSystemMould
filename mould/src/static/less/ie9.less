@@ -1,0 +1,30 @@
+/**
+ * 由于 antd 部分元素采用了 flex 布局，但 IE9 并不支持 flex，所以需要对 IE9 调整样式
+ * 采用属性值后添加 \9 的方式进行 hack
+ * (!) 注意这个 hack 标记会影响到 IE10
+ */
+.app-container {
+  .ant-layout-header {
+    width: 100%\9;
+    position: absolute\9;
+  }
+
+  .ant-layout-has-sider {
+    display: table\9;
+    width: 100%\9;
+    height: 100%\9;
+    padding-top: 48px\9;
+
+    .ant-layout-sider,
+    .ant-layout-content {
+      display: table-cell\9;
+      vertical-align: top\9;
+    }
+    .ant-layout-content {
+      height: 100%\9;
+
+      .ant-tabs-content {
+      }
+    }
+  }
+}

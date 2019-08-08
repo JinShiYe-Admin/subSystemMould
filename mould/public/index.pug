@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='robots' content='none')
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+    title #{SYSTEM_NAME}
+    //link(type='text/css' rel='stylesheet' href=`${PUBLIC_STATIC_PATH}/css/antd.min.css`)
+    script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/html5shiv.min.js`)
+
+  body
+    #app
+    script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/polyfill.min.js`)
+
+    //script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/react.production.min.js`)
+    //script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/react-dom.production.min.js`)
+
+    script(type='text/javascript' src=`https://cdn.bootcss.com/react/16.4.1/umd/react.development.js`)
+    script(type='text/javascript' src=`https://cdn.bootcss.com/react-dom/16.4.1/umd/react-dom.development.js`)
+
+    script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/react-router.min.js`)
+    script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/react-router-dom.min.js`)
+    script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/moment.min.js`)
+    script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/moment.locale.zh-cn.js`)
+    script(type='text/javascript' src=`${PUBLIC_STATIC_PATH}/js/antd-with-locales.min.js`)
